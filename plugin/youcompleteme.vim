@@ -89,6 +89,9 @@ let g:ycm_key_list_previous_completion =
 let g:ycm_key_invoke_completion =
       \ get( g:, 'ycm_key_invoke_completion', '<C-Space>' )
 
+let g:ycm_key_accept_completion =
+      \ get( g:, 'ycm_key_accept_completion', '<Enter>' )
+
 let g:ycm_key_detailed_diagnostics =
       \ get( g:, 'ycm_key_detailed_diagnostics', '<leader>d' )
 

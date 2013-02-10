@@ -98,6 +98,10 @@ function! s:SetUpKeyMappings()
           \ ' pumvisible() ? "\<C-n>" : "\' . key .'"'
   endfor
 
+  if strlen(g:ycm_key_accept_completion)
+    exe 'inoremap <expr> ' . g:ycm_key_accept_completion .
+		\ ' pumvisible() ? "<Esc>a" : "' . g:ycm_key_accept_completion . '"'
+  endif
 
   for key in g:ycm_key_list_previous_completion
     " This selects the previous candidate for shift-tab (default)
